@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+pre {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 74.5vh;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 10.4rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    margin-left: 3vw;
+    margin-right: 0.1vw;
+    margin-bottom: 1.5rem;
+    margin-top: 4.2rem;
+    min-width: 45%;
+}
+
+.hero .one,
+.hero .two,
+.hero .three,
+.hero .four {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .one {
+    background: rgb(49, 29, 94);
+    overflow: hidden;
+    background: -moz-linear-gradient(45deg, rgba(9, 5, 47, 0.851) 0%, rgba(49, 29, 94, 0.851) 100%), url("../assets/hero-img.png");
+    background: -webkit-linear-gradient(45deg, rgba(9, 5, 47, 0.851) 0%, rgba(49, 29, 94, 0.851) 100%), url("../assets/hero-img.png");
+    background: linear-gradient(45deg, rgba(9, 5, 47, 0.851) 0%, rgba(49, 29, 94, 0.851) 100%), url("../assets/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero .two {
+    background-image: url(https://picsum.photos/id/1021/1920/1080);
+}
+
+.hero .three {
+    background-image: url(https://picsum.photos/id/42/1920/1080);
+}
+
+.hero .four {
+    background-image: url(https://picsum.photos/id/43/1920/1080);
+}
+
+.slide a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slide-btn {
+    display: none;
+}
+
+.slide {
+    float: left;
+    height: 100%;
+    width: 0;
+    transition: width .3s linear;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide>* {
+    transition: transform .15s linear;
+    transform: scale(0);
+}
+
+.slide h1 {
+    font-size: 5vmin;
+    margin: 0;
+}
+
+.labels {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7.5vh;
+}
+
+.labels label {
+    display: inline-block;
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+    border-radius: 15px;
+    margin: .055vmin .055vmin;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+#slide-btn-1:checked~.one,
+#slide-btn-2:checked~.two,
+#slide-btn-3:checked~.three,
+#slide-btn-4:checked~.four {
+    width: 100%;
+}
+
+#slide-btn-1:checked~.one>*,
+#slide-btn-2:checked~.two>*,
+#slide-btn-3:checked~.three>*,
+#slide-btn-4:checked~.four>* {
+    transform: scale(1);
+}
+
+#slide-btn-1:checked~.labels label[for="slide-btn-1"],
+#slide-btn-2:checked~.labels label[for="slide-btn-2"],
+#slide-btn-3:checked~.labels label[for="slide-btn-3"],
+#slide-btn-4:checked~.labels label[for="slide-btn-4"] {
+    background-color: #00e0d0;
+    border-color: #00e0d0;
+}
+
+.slider-content {}
