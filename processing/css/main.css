@@ -66,7 +66,7 @@ a:focus {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    min-width: 325px;
+    min-width: 300px;
 }
 
 .a-headerExplain {
@@ -333,7 +333,7 @@ a:focus {
     display: inline-flex;
     flex-direction: column;
     margin: 8vh 0 0 0;
-    min-width: 300px;
+    min-width: 295px;
 }
 
 .m-about__txtIn {
@@ -389,11 +389,22 @@ a:focus {
     height: inherit;
 }
 .m-video__startPlay{
-    display: block;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .m-video__startPlay:hover{
     cursor: pointer;
 
+}
+.a-video__link {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
 }
 .-videoButton {
     padding-top: 2rem;
@@ -419,45 +430,29 @@ a:focus {
 }
 
 .-videoCaption {
-
+    margin: 3rem auto auto auto;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
     text-transform: uppercase;
-    color: white;
-    margin-top: 3%;
 }
 
-.-videoButton:hover{
+
+.m-video__startPlay:hover > .-videoButton{
     border-color: #00e0d0;
     background: #13102d;
     filter: drop-shadow(5px 5px 100px #00e0d0) drop-shadow(-5px -5px 25px #4aa3cc);
-
-}
-.-videoCaption:hover{
-    outline: none;
-    color: #00e0d0;
 }
 
-.-videoButton:hover .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {
+.m-video__startPlay:hover > .-videoButton .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {
     fill: #00e0d0;
 }
 
-.-videoButton:hover ~ .-videoCaption {
+
+.m-video__startPlay:hover > .-videoCaption {
     color: #00e0d0;
-}
-/*.-videoCaption:hover*/
-.-videoCaption:hover ~ .a-video__play:not(:last-child) {
-    background: red;
-}
-/*.a-video__caption:hover .m-video__play:hover .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {*/
-/*    fill: #00e0d0;*/
-/*}*/
 
-
-/*.a-video__caption:hover ~ .m-video__play {*/
-/*    border-color: #00e0d0;*/
-/*    background: #13102d;*/
-/*    filter: drop-shadow(5px 5px 100px #00e0d0) drop-shadow(-5px -5px 25px #4aa3cc);*/
-/*    cursor: pointer;*/
-/*}*/
+}
 
 /*END Land_video*/
 
@@ -1002,7 +997,7 @@ a:focus {
         flex-direction: column;
         min-height: 50vh;
         margin: 5.5vh 0 10vh 0;
-        width: 100vw;
+        width: 100%;
     }
 
     .m-about__img {
@@ -1130,7 +1125,7 @@ a:focus {
     }
 
     .m-hero__navContainerIn.-mobile {
-        width: 100vw;
+        width: 100%;
         align-items: center;
         display: flex;
     }
@@ -1156,10 +1151,10 @@ a:focus {
         margin: 60vh 0 0 0;
     }
 
-    .o-about {
-        width: 100vw;
-        flex-direction: column;
-    }
+    /*.o-about {*/
+    /*    width: 100vw;*/
+    /*    flex-direction: column;*/
+    /*}*/
 }
 
 
