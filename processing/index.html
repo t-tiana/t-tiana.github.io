@@ -27,7 +27,7 @@
 
 <body>
 
-<header class="o-hero">
+<header id="home" class="o-hero">
 
     <section class="m-hero__navContainer -desktop">
         <nav class="m-hero__navContainerIn -desktop">
@@ -49,12 +49,12 @@
                           d="M2.62,40.38C9.6,27.4,17.11,14.67,25,2.23,32.88,14.69,40.39,27.41,47.36,40.4c-3.71.16-7.41.28-11.12.42A149.74,149.74,0,0,1,25,52.94,145,145,0,0,1,13.75,40.82C10,40.68,6.33,40.55,2.62,40.38Zm2.27-1.23,8,.08C16,29.62,19.05,20,21.83,10.31,15.85,19.73,10.45,29.49,4.89,39.15Zm9.66.4Q19,44.88,24,49.75c.21-13.19.44-26.4-.13-39.58C20.42,19.84,17.67,29.76,14.55,39.55ZM26.14,10.17c-.52,13.19-.33,26.39-.1,39.58Q31,44.86,35.45,39.56C32.42,29.74,29.54,19.87,26.14,10.17Zm2,.14C30.94,20,34,29.62,37.08,39.24l8-.09C39.58,29.47,34.15,19.72,28.17,10.31Z"
                           transform="translate(-2.62 -2.23)"/>
                 </svg>
-                <span class="a-hero__logoText -fThin">tajam</span>
+                <span onclick="location.href='http://www.example.com'" type="button" class="a-hero__logoText -fThin">tajam</span>
             </div>
 
             <ul class="m-hero__mainMenuContainer -fBold">
                 <li class="a-hero__menuItem a-menuItem1">
-                    <a href="/" class="-hero__menuItem a-navLink">
+                    <a href="#home" class="-hero__menuItem a-navLink">
                         Home
                     </a>
                 </li>
@@ -95,15 +95,16 @@
 
     <div class="m-slide -one">
         <section class="m-slide__content -one">
-            <h1 class="a-header -slide -fSemiBold">We Are Awesome Creative Agency</h1>
-            <div class="a-header__line -slide"></div>
-            <p class="a-slide__text">
+            <h1 class="a-header -slideHeader -fSemiBold">We Are Awesome Creative Agency</h1>
+            <div class="a-header__line -slideLine"></div>
+            <p class="a-slide__text -headingArticle">
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem
                 quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
                 nibh
                 vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-            <button class="a-learn__button -fBold">Learn more</button>
+
+            <button class="a-learn__button -fBold" onclick="location.href='http://www.example.com'" type="button">Learn more</button>
             <div class="m-slide__slideSwitch">
                 <div class="a-slide__slideBtn"></div>
                 <div class="a-slide__slideBtn"></div>
@@ -116,12 +117,12 @@
     </div>
 
 </header>
-<section class="o-about">
+<section id="about" class="o-about">
     <div class="m-about__img"></div>
     <div class="m-about__txt">
         <article class="m-about__txtIn">
-            <h3 class="a-about__header -fSemiBold">OUR STORY</h3><br>
-            <p class="a-about__article -fRegular">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+            <h3 class="a-header -blockHeader -fSemiBold">OUR STORY</h3><br>
+            <p class="a-about__article -headingArticle">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                 velit auctor
                 aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
                 nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
@@ -131,15 +132,15 @@
                 Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
                 ad litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
-            <button class="a-learn__button -two -fBold">Learn more</button>
+                     <button class="a-learn__button -two -fBold" onclick="location.href='http://www.example.com'" type="button">Learn more</button>
         </article>
 
     </div>
 </section>
 
-<div id="o-video" class="o-video">
+<div id="video" class="o-video">
     <div class="m-video__content">
-        <a href="#o-video" class="m-video__startPlay">
+        <a href="#video" class="m-video__startPlay">
             <div class="a-video__play -videoButton">
                 <svg id="bd404e47-6953-4d20-a42c-53f8bd64a4df" class="a-video__button">
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,41 +150,88 @@
                           transform="translate(0 0)"/>
                 </svg>
             </div>
-            <div class="a-video__play -videoCaption -fBold">Watch our story</div>
-
+            <div class="a-video__play -caption -videoCaption -fBold">Watch our story</div>
         </a>
-
     </div>
 </div>
 
-<section class="o-expertize">
+<section id="expertise" class="o-expertize">
     <div class="m-expertize__textIN">
-        <h1 class="a-header -expertize">Expertize</h1>
-        <h5 class="a-headerExplain -expertize -fThin">Lorem ipsum dolor sit amet proin gravida nibh vel velit</h5>
+        <h1 class="a-header -blockHeader -fSemiBold">Expertize</h1>
+        <h5 class="a-header -explainHeader -expertize -fThin">Lorem ipsum dolor sit amet proin gravida nibh vel velit</h5>
         <div class="a-header__line -expertize"></div>
     </div>
-    <div class="m-expertize__grid">
-        <div class="m-expertize__item -one"></div>
-        <div class="m-expertize__item -one">
+    <div class="m-expertize__gridIN">
+        <div class="m-expertize__grid">
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    <div class="a-expertise__item -icon">
+                        <svg version="1.1" id="a095b73e-08b5-48be-975f-dc3a42dcf34f"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                             y="0px" viewBox="0 0 49 50"
+                             style="enable-background:new 0 0 49 50;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: url(#SVGID_1_);
+                                }
+                            </style>
+                            <g id="fbd6356a-472e-406a-afef-290fb579816a">
+                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="25.0025" x2="49"
+                                                y2="25.0025">
+                                    <stop offset="2.033214e-07" style="stop-color:#00E0D0"/>
+                                    <stop offset="1" style="stop-color:#4AA3CC"/>
+                                </linearGradient>
+                                <path class="st0" d="M42.7,0H6.3C2.8,0,0,2.8,0,6.3v28.1c0,3.5,2.8,6.3,6.3,6.3c0,0,0,0,0,0H19v6.3h-3.2c-0.9-0.1-1.6,0.6-1.7,1.4
+		c-0.1,0.9,0.6,1.6,1.4,1.7c0.1,0,0.2,0,0.3,0h19c0.9,0.1,1.6-0.6,1.7-1.4c0.1-0.9-0.6-1.6-1.4-1.7c-0.1,0-0.2,0-0.3,0h-3.2v-6.3
+		h11.1c3.5,0,6.3-2.8,6.3-6.2c0,0,0,0,0,0V6.3C49,2.8,46.2,0,42.7,0z M28.5,46.9h-6.3v-6.3h6.3L28.5,46.9z M45.8,34.4
+		c0,1.7-1.4,3.1-3.2,3.1H6.3c-1.7,0-3.1-1.4-3.2-3.1v-3.1h42.7V34.4z M45.8,28.1H3.2V6.3c0-1.7,1.4-3.1,3.2-3.1c0,0,0,0,0,0h36.4
+		c1.7,0,3.1,1.4,3.2,3.1V28.1z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="a-expertise__caption -caption -fBold">
+                        Web design & development
+                    </div>
+                    <p class="a-expertise__txt -headingArticle">
+                    This is Photoshop's version of Lorem <br/>
+                        Ipsum. Proin gravida nibh vel velit <br/>auctor aliquet Aenean.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    hello
+                </div>
+            </div>
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    hello
+                </div>
+            </div>
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    hello
+                </div>
+            </div>
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    hello
+                </div>
+            </div>
+
+            <div class="m-expertize__item -one">
+                <div class="m-expertize__item -one -content">
+                    hello
+                </div>
+            </div>
 
         </div>
-
-        <div class="m-expertize__item -one">
-
-        </div>
-
-        <div class="m-expertize__item -one">
-
-        </div>
-
-        <div class="m-expertize__item -one">
-
-        </div>
-
-        <div class="m-expertize__item -one">
-
-        </div>
-
     </div>
 </section>
 <section class="o-team">
