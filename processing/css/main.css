@@ -391,7 +391,11 @@ a:focus {
 .m-video__startPlay{
     display: block;
 }
-.m-video__play {
+.m-video__startPlay:hover{
+    cursor: pointer;
+
+}
+.-videoButton {
     padding-top: 2rem;
     padding-left: 2.5rem;
     border: 3px solid white;
@@ -414,32 +418,34 @@ a:focus {
 
 }
 
-.a-video__caption {
+.-videoCaption {
 
     text-transform: uppercase;
     color: white;
     margin-top: 3%;
 }
 
-.m-video__play:hover{
+.-videoButton:hover{
     border-color: #00e0d0;
     background: #13102d;
     filter: drop-shadow(5px 5px 100px #00e0d0) drop-shadow(-5px -5px 25px #4aa3cc);
-    cursor: pointer;
+
 }
-.a-video__caption:hover{
+.-videoCaption:hover{
     outline: none;
+    color: #00e0d0;
 }
 
-.m-video__play:hover .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {
+.-videoButton:hover .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {
     fill: #00e0d0;
 }
 
-.m-video__play:hover ~ .a-video__caption {
+.-videoButton:hover ~ .-videoCaption {
     color: #00e0d0;
 }
-.a-video__caption:not(:last-child) {
-    color: red
+/*.-videoCaption:hover*/
+.-videoCaption:hover ~ .a-video__play:not(:last-child) {
+    background: red;
 }
 /*.a-video__caption:hover .m-video__play:hover .-b892a3e3-3a2f-4f97-a01f-8e36582873c1 {*/
 /*    fill: #00e0d0;*/
