@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta property="og:title" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:image" content="" />  -->
-    <title>Mockup01</title>
+    <title>Tajam</title>
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/normalize.css"/>
@@ -487,7 +482,7 @@
 
 </section>
 
-<section class="o-contactForm">
+<section id="contact" class="o-contactForm">
     <div class="m-contactForm__contentIN">
         <div class="m-contactForm__formIN">
             <h3 class="a-header -blockHeader -fSemiBold">give us a good news</h3>
@@ -991,16 +986,38 @@
             </svg>
             <span class="a-hero__logoText -fThin">tajam</span></div>
         <nav class="m-mobileNav">
-            <div class="m-mobileNav__menuTrigger">
+            <button id="menuTrigger" class="m-mobileNav__menuTrigger" action="javascript:void(0);" onclick="openNav()">
                 <svg viewBox="0 0 100 80" width="40" height="40" class="m-mobileNav__menuTrigger -hamburger">
                     <rect width="100" rx="8" height="8"></rect>
                     <rect y="30" width="100" rx="8" height="8"></rect>
                     <rect y="60" width="100" rx="8" height="8"></rect>
                 </svg>
-            </div>
+            </button>
         </nav>
     </div>
 </section>
-</body>
 
+<section class="o-mobileNav" id='o-mobileNav'>
+    <button action="javascript:void(0);" id="closebtn" class="a-mobileNav__close" onclick="closeNav()">&times;</button>
+    <nav id='menu' class='m-mobileNav__content'>
+
+        <button action="javascript:void(0);" id="mobileNavHome" class="a-mobileNavBtn" onclick="location.href='#home';closeNav()">Home</button>
+
+        <button action="javascript:void(0);" id="mobileNavAbout" class="a-mobileNavBtn" onclick="location.href='#about';closeNav()">About</button>
+
+        <button action="javascript:void(0);" id="mobileNavExpertise" class="a-mobileNavBtn" onclick="location.href='#expertise';closeNav()">Expertise</button>
+
+        <button action="javascript:void(0);" id="mobileNavTeams" class="a-mobileNavBtn" onclick="location.href='#team';closeNav()">Teams</button>
+
+        <button action="javascript:void(0);" id="mobileNavWorks" class="a-mobileNavBtn" onclick="location.href='#works';closeNav()">Works</button>
+
+        <button action="javascript:void(0);" id="mobileNavTestimonials" class="a-mobileNavBtn" onclick="location.href='#testimonials';closeNav()">People say</button>
+
+        <button action="javascript:void(0);" id="mobileNavContact" class="a-mobileNavBtn"  onclick="location.href='#contact';closeNav()">Contact</button>
+    </nav>
+</section>
+
+<script src="js/index.js"></script>
+
+</body>
 </html>

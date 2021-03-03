@@ -197,6 +197,12 @@ a:focus {
     justify-content: space-around;
 }
 
+.m-mobileNav__menuTrigger{
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
 .m-mobileNav__menuTrigger.-hamburger {
     fill: #423369;
     padding-top: 0.5vh;
@@ -1089,6 +1095,60 @@ a:focus {
 }
 
 /*END Footer*/
+
+/*mobileNav*/
+
+
+.o-mobileNav {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 0;
+    background-color: rgba(19, 16, 45, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.m-mobileNav__content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 25%;
+    width: 100%;
+}
+.a-mobileNavBtn{
+    background:none;
+    border:none;
+    grid-column: 2 / span 1;
+    padding: 0.4em;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+.a-mobileNavBtn:hover, .a-mobileNavBtn:focus {
+    color: #00e0d0;
+    cursor: pointer;
+}
+
+.a-mobileNav__close {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    font-size: 2.7em;
+    background:none;
+    border:none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.a-mobileNav__close:hover {
+    color: #00e0d0;
+}
+/*END mobileNav*/
 
 
 @media (max-width: 1325px) {
