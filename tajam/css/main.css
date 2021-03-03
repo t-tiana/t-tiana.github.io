@@ -53,7 +53,7 @@ a:focus {
 }
 
 .-restricted {
-    min-width: 325px;
+    min-width: 250px;
 }
 
 .a-header {
@@ -61,14 +61,14 @@ a:focus {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    min-width: 275px;
+    min-width: 250px;
     text-transform: uppercase;
 }
 
 .a-header.-explainHeader {
     font-size: 1rem;
     text-transform: none;
-    min-width: 325px;
+    min-width: 250px;
     line-height: normal;
 }
 
@@ -311,7 +311,7 @@ a:focus {
     color: #ffffff;
     width: 50vw;
     overflow: hidden;
-    min-width: 300px;
+    min-width: 250px;
     line-height: 1.8;
 }
 
@@ -369,7 +369,7 @@ a:focus {
     display: inline-flex;
     flex-direction: column;
     margin: 8vh 0 0 0;
-    min-width: 295px;
+    min-width: 250px;
 }
 
 .m-about__txtIn {
@@ -631,7 +631,7 @@ a:focus {
     color: #ffffff;
     width: 50vw;
     overflow: hidden;
-    min-width: 300px;
+    min-width: 250px;
     margin: 2rem 0;
 }
 
@@ -803,7 +803,7 @@ a:focus {
 }
 .m-contactForm__formIN{
     width: 35%;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .m-contactForm__form {
@@ -846,7 +846,7 @@ a:focus {
 
 .m-contactForm__clientsIN{
     width: 35%;
-    min-width: 300px;
+    min-width: 250px;
 }
 .m-contactForm__clientsGrid{
     display:grid;
