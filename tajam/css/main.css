@@ -200,6 +200,7 @@ a:focus {
 .m-mobileNav__menuTrigger{
     background:none;
     border:none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -1120,6 +1121,7 @@ a:focus {
 .a-mobileNavBtn{
     background:none;
     border:none;
+    outline: none;
     grid-column: 2 / span 1;
     padding: 0.4em;
     text-decoration: none;
@@ -1128,6 +1130,7 @@ a:focus {
     display: block;
     transition: 0.3s;
     font-family: 'Playfair Display', serif;
+
 }
 
 .a-mobileNavBtn:hover, .a-mobileNavBtn:focus {
@@ -1142,6 +1145,7 @@ a:focus {
     font-size: 2.7em;
     background:none;
     border:none;
+    outline: none;
     color: #ffffff;
     cursor: pointer;
 }
