@@ -1,4 +1,9 @@
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     background: #636363;
