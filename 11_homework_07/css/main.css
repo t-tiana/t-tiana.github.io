@@ -2,7 +2,9 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     background: #636363;
-    /*background: fixed no-repeat linear-gradient(161deg, rgba(255, 255, 255, 1) 0%, rgba(234, 239, 254, 1) 39%, rgba(185, 185, 185, 1) 100%);*/
+    background: fixed linear-gradient(161deg, rgba(255, 255, 255, 1) 0%, rgba(234, 239, 254, 1) 39%, rgba(185, 185, 185, 1) 100%);
+    background-blend-mode: screen;
+    background-size: cover;
 
 }
 
