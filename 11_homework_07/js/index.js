@@ -40,15 +40,14 @@ const COUNTRY_list = [
 
     }];
 
-let createTaskBlock = (taskNum, number, taskWrap, list) => {
+let block ='';
+let createTaskBlock = (taskNum, number, taskWrap, block1, block2, block3) => {
 
     taskNum.setAttribute('class', 'task-number');
     taskNum.innerHTML = `Task #${number}`;
 
     taskWrap.setAttribute('class', 'main-container__task-wrap');
-    taskWrap.append(taskNum, list);
-
-    list.setAttribute('class', 'list');
+    taskWrap.append(taskNum, block1, block2, block3);
 
     mainContainerColumn.append(taskWrap)
     mainContainerRow.append(title, mainContainerColumn);
@@ -56,6 +55,7 @@ let createTaskBlock = (taskNum, number, taskWrap, list) => {
     document.body.append(mainContainer);
 
 }
+
 
 let mainContainer = document.createElement('div');
 mainContainer.setAttribute('class', 'main-container');
@@ -74,8 +74,10 @@ title.innerHTML = 'JS Homework 07';
 let taskWrapper1 = document.createElement('div');
 let taskNumber1 = document.createElement('h3');
 let list1 = document.createElement('ol');
+list1.setAttribute('class', 'list');
+list1.setAttribute('id', 'list1')
 
-createTaskBlock(taskNumber1, '1', taskWrapper1, list1);
+createTaskBlock(taskNumber1, '1', taskWrapper1, list1, block, block);
 
 let renderCountry = COUNTRY_list.forEach((element, index) => {
     let countryValue = element.country;
@@ -149,8 +151,9 @@ const colorList = [
 let taskWrapper2 = document.createElement('div');
 let taskNumber2 = document.createElement('h3');
 let list2 = document.createElement('ol');
+list2.setAttribute('class', 'list');
 list2.setAttribute('id', 'list2')
-createTaskBlock(taskNumber2, '2', taskWrapper2, list2);
+
 
 let colorInput = document.createElement('input');
 let updateColor = () => list2.style.color = `${colorInput.value}`;
@@ -165,12 +168,11 @@ colorInput.setAttribute('data-jscolor',
  paletteCols: 9, paletteHeight: 25,
 \t\tpadding: 10, sliderSize: 25, borderRadius: 5,
 \t\tborderWidth: 0, controlBorderWidth: 1, pointerBorderWidth: 2,
-\t\tborderColor: '#000', controlBorderColor: '#AAA', backgroundColor: '#F3F3F3', shadowColor: 'rgba(0,0,0,.4)',
+\t\tborderColor: '#000', controlBorderColor: '#AAA', backgroundColor: 'rgba(236, 236, 236, .7)', shadowColor: 'rgba(167, 167, 176,.4)',
 \t\tcloseButton: true, closeText: 'OK', buttonColor: '#333'}`
 );
 
-
-list2.append(colorInput);
+createTaskBlock(taskNumber2, '2', taskWrapper2, colorInput, list2, block);
 
 let renderColorList = colorList.forEach((element) => {
     let li = document.createElement('li');

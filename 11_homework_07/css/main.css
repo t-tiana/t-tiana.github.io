@@ -73,10 +73,12 @@ h1, h3 {
 }
 
 .color-picker {
-    margin: 1rem;
     background-color: #ffffff;
-    color: rebeccapurple;
+    color: #636363;
     border: #ffffff;
     outline: none;
     cursor: pointer;
+    margin: 1rem 0;
+    width: 40%;
+    border-radius: 3px;
 }
